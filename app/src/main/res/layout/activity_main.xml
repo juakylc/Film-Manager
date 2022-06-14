@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="405dp"
+        android:layout_height="306dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:fontFamily="@font/aldrich"
+            android:orientation="horizontal"
+            android:text="Archivos de la orden Jedi"
+            android:textAllCaps="false"
+            android:textColor="@color/gold"
+            android:textIsSelectable="false"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="298dp"
+        android:layout_marginTop="304dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <Button
+            android:id="@+id/showButton"
+            android:layout_width="233dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center"
+            android:text="Mostrar Holocrones"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="394dp" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="235dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:text="Añadir Holocron"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="472dp" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="236dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:text="Destruir Holocron"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="549dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="84dp"
+        android:fontFamily="@font/aldrich"
+        android:orientation="horizontal"
+        android:text="Que la fuerza te acompañe"
+        android:textAllCaps="false"
+        android:textColor="@color/dodger_blue"
+        android:textIsSelectable="false"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.942" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
